@@ -126,7 +126,7 @@
         .then(function (result) {
           if (result.ok) {
             close();
-            window.location.href = result.url;
+            window.open(result.url, "_blank", "noopener,noreferrer");
             return;
           }
 
